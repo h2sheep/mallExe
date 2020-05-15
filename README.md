@@ -1,19 +1,11 @@
 # mall
 
-## Project setup
-```
-npm install
-```
+* 为了使用vue而练手的项目
+* 数据都是通过后台接口获取
+* 主要是为了熟悉vue用法，以及数据的获取和调用
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### 后面
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* 练习完后会进行个人总结
+* 我的博客 www.h2sheep.cn 
+* 我的学习笔记
