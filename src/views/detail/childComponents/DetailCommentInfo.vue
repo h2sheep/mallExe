@@ -1,12 +1,12 @@
 <template>
-  <div class="comment-info" v-if="Object.keys(comment).length !== 0">
+  <div class="comment-info" v-if="comment">
 
     <div class="comment-top">
       <div>用户评价</div>
       <div>更多</div>
     </div>
 
-    <div class="user">
+    <div class="user" v-if="comment.user">
       <div class="avatar"><img :src="comment.user.avatar" alt=""></div>
       <div class="user-name">{{comment.user.uname}}</div>
     </div>
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="imgs">
+    <div class="imgs" v-if="comment.images">
       <div v-for="index in comment.images.length" class="img-item">
         <img :src="comment.images[index - 1]" alt="">
       </div>

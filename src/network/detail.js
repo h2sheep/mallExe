@@ -41,7 +41,7 @@ export class Shop {
 
 export class GoodsParam {
   constructor(info, rule) {
-    this.image = info.images ? info.iamges[0] : ''
+    this.image = info.images ? info.iamges[0] : null
     this.infos = info.set 
     this.sizes = rule.tables 
   }

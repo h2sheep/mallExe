@@ -62,6 +62,14 @@
         product.price = this.goods.realPrice
         product.iid = this.iid
 
+        // this.$store.commit('addCart', product)
+
+        //action
+        this.$store.dispatch('addCart', product)
+          .then(res => {
+            // console.log(this.$toast.show)
+            this.$toast.show(res, 1500)
+          })
       }
     },
     created() {
@@ -82,8 +90,6 @@
       getRecommend().then(res => {
         this.recommends = res.data.list
       })
-
-
     },
   }
 </script>
