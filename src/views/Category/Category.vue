@@ -30,7 +30,6 @@
     },
     created() {
       getCategory().then(res => {
-        console.log(res)
 
         this.list = res.data.category.list
       })
